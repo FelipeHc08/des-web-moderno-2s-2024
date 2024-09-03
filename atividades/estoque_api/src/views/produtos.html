@@ -5,10 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Produtos</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f0f2f5;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            max-width: 900px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .btn-custom {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 50px;
+            transition: background-color 0.3s, transform 0.3s;
+            margin-right: 10px;
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        .btn-custom:focus, .btn-custom:active {
+            box-shadow: none;
+            outline: none;
+        }
+
+        table {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            text-align: center;
+        }
+
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        thead th {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <div class="container mt-5">
-        <h1 class="mb-4">Lista de Produtos</h1>
+        <div class="text-center mb-4">
+            <h1>Lista de Produtos</h1>
+            <a href="/" class="btn btn-custom">Voltar para Index</a>
+        </div>
 
         <table class="table table-striped">
             <thead>
